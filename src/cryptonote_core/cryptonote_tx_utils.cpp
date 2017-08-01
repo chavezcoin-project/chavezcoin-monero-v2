@@ -476,6 +476,8 @@ namespace cryptonote
     blobdata txb = tx_to_blob(bl.miner_tx);
     std::string hex_tx_represent = string_tools::buff_to_hex_nodelimer(txb);
 
+    LOG_PRINT_L0("GENESIS HEX TX REPRESENT: " << hex_tx_represent << ENDL);
+
     std::string genesis_coinbase_tx_hex = config::GENESIS_TX;
 
     blobdata tx_bl;
